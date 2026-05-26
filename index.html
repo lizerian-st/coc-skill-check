@@ -46,9 +46,9 @@
             if (roll > skill) {
                 msg += "結果: 失敗";
             } else {
-                if (roll <= skill / 5) msg += "結果: 大成功 (Extreme Success)";
-                else if (roll <= skill / 2) msg += "結果: 極限成功 (Hard Success)";
-                else msg += "結果: 困難成功 (Regular Success)";
+                if (roll <= skill / 5) msg += "結果: 極限成功 (Extreme Success)";
+                else if (roll <= skill / 2) msg += "結果: 困難成功 (Hard Success)";
+                else msg += "結果: 成功 (Regular Success)";
             }
             document.getElementById('skillResult').innerHTML = msg;
         }
